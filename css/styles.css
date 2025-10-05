@@ -1,0 +1,97 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f5f0;
+  color: #3d3d3d;
+  line-height: 1.6;
+}
+
+.bg-cream {
+  background-color: #f4e9dc;
+}
+
+.bg-light-cream {
+  background-color: #faf6f2;
+}
+
+.section-title {
+  font-weight: 600;
+  color: #7a5c3e;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #d4b48c;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+.media-row {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.media-box {
+  background: #fffdf9;
+  border: 1px solid #eee3d3;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  font-weight: 500;
+  color: #6b5032;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+.media-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-card img {
+  object-fit: cover;
+  height: 180px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.project-card .card-body {
+  background-color: #fffdf9;
+  border-radius: 0 0 10px 10px;
+}
+.project-card h5 {
+  color: #6b5032;
+  font-weight: 600;
+}
+
+h1 { font-size: 1.6rem; }
+h2 { font-size: 1.25rem; }
+p  { font-size: 0.95rem; }
+
+@media (min-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.4rem; }
+  p  { font-size: 1rem; }
+  .media-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .media-box {
+    flex: 0 0 calc(50% - 15px);
+  }
+}
+
+@media (min-width: 992px) {
+  h1 { font-size: 2.4rem; }
+  h2 { font-size: 1.6rem; }
+  p  { font-size: 1.05rem; }
+  .media-box {
+    flex: 0 0 calc(33.333% - 15px);
+  }
+}
+
+footer {
+  border-top: 1px solid #e2d7c5;
+  letter-spacing: 0.3px;
+}
